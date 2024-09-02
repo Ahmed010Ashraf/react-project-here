@@ -1,0 +1,66 @@
+main{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(120,0,0,.5)), url(../../../assets/images/network.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .cont{
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+}
+main .arrow{
+    padding: 7px 12px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    width: fit-content;
+    margin: 10px auto 0;
+    cursor: pointer;
+    font-size: 1.3rem;
+
+}
+main .arrow i{
+    margin-left: 10px;
+    animation: go 1s infinite ease-in-out both alternate;
+    -webkit-animation: go 1s infinite ease-in-out both alternate;
+}
+@keyframes go {
+    from{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+to{
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+}
+}
+@media (max-width: 768px) {
+    main .cont{
+        font-size: 1.3rem;
+    }
+    main .cont p:first-of-type{
+        width: 350px;
+        margin: auto;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+    main .arrow{
+        padding: 5px 7px;
+        font-size: 1.2rem;
+        width: 200px;
+    }
+}

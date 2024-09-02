@@ -1,0 +1,16 @@
+.foot{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.foot span{
+    font-size: 20px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .foot {
+        font-size: 13px;
+    }
+}

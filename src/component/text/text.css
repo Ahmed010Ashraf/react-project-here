@@ -1,0 +1,21 @@
+.text{
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.text h2{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+.text p{
+    font-size: 1.7;
+}
+.text::before{
+    content: "";
+    position: absolute;
+    top: 105%;
+    width: 20%;
+    height: 3px;
+    background-color: brown;
+    transform: translateX(-48%);
+}
